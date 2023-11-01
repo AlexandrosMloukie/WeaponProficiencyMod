@@ -1,6 +1,7 @@
 package net.amloukie.wpmod;
 
 import com.mojang.logging.LogUtils;
+import net.amloukie.wpmod.item.ModItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -14,16 +15,17 @@ import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(WeaponMasterMod.MOD_ID)
-public class WeaponMasterMod
+@Mod(WeaponProficiencyMod.MOD_ID)
+public class WeaponProficiencyMod
 {
     public static final String MOD_ID = "wpmod";
-
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public WeaponMasterMod()
+    public WeaponProficiencyMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
