@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "wpmod:zircon_ore",
+    "wpmod:zircon_block",
+    "wpmod:deepslate_zircon_ore"
+  ]
+}

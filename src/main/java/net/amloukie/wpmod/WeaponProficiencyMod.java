@@ -1,6 +1,7 @@
 package net.amloukie.wpmod;
 
 import com.mojang.logging.LogUtils;
+import net.amloukie.wpmod.block.ModBlocks;
 import net.amloukie.wpmod.item.ModItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
@@ -26,6 +27,7 @@ public class WeaponProficiencyMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

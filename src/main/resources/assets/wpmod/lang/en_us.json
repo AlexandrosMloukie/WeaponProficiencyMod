@@ -2,5 +2,9 @@
   "item.wpmod.zircon": "Zircon",
   "item.wpmod.raw_zircon": "Raw Zircon",
 
+  "block.wpmod.zircon_block": "Block of Zircon",
+  "block.wpmod.zircon_ore": "Zircon Ore",
+  "block.wpmod.deepslate_zircon_ore": "Deepslate Zircon Ore",
+
   "itemGroup.tutorialtab": "Zircon Tutorial Tab"
 }
