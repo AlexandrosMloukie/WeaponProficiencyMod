@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "wpmod:block/jumpy_block" }
+  }
+}

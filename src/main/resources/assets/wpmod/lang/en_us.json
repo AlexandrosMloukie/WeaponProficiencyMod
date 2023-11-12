@@ -6,6 +6,7 @@
   "block.wpmod.zircon_block": "Block of Zircon",
   "block.wpmod.zircon_ore": "Zircon Ore",
   "block.wpmod.deepslate_zircon_ore": "Deepslate Zircon Ore",
+  "block.wpmod.jumpy_block": "Jumpy Block",
 
   "itemGroup.tutorialtab": "Zircon Tutorial Tab"
 }

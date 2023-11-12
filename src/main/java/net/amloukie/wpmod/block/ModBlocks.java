@@ -1,6 +1,7 @@
 package net.amloukie.wpmod.block;
 
 import net.amloukie.wpmod.WeaponProficiencyMod;
+import net.amloukie.wpmod.block.custom.JumpyBlock;
 import net.amloukie.wpmod.item.ModCreativeModeTab;
 import net.amloukie.wpmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -46,6 +47,12 @@ public class ModBlocks {
                     , UniformInt.of(3, 7)),
             ModCreativeModeTab.TUTORIAL_TAB);
 
+
+    public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block",
+            () -> new JumpyBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f)
+                    .requiresCorrectToolForDrops()),
+            ModCreativeModeTab.TUTORIAL_TAB);
 
 
     // Helper Methods
