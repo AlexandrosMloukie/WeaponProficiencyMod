@@ -3,6 +3,8 @@ package net.amloukie.wpmod;
 import com.mojang.logging.LogUtils;
 import net.amloukie.wpmod.block.ModBlocks;
 import net.amloukie.wpmod.item.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;

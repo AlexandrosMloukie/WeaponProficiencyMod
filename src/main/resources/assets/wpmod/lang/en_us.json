@@ -2,12 +2,15 @@
   "item.wpmod.zircon": "Zircon",
   "item.wpmod.raw_zircon": "Raw Zircon",
   "item.wpmod.eight_ball": "Eight Ball",
+  "item.wpmod.blueberry": "Blueberry",
+  "item.wpmod.blueberry_seeds": "Blueberry Seeds",
 
   "block.wpmod.zircon_block": "Block of Zircon",
   "block.wpmod.zircon_ore": "Zircon Ore",
   "block.wpmod.deepslate_zircon_ore": "Deepslate Zircon Ore",
   "block.wpmod.jumpy_block": "Jumpy Block",
   "block.wpmod.zircon_lamp": "Zircon Lamp",
+  "block.wpmod.blueberry_crop": "Blueberry Crop",
 
   "itemGroup.tutorialtab": "Zircon Tutorial Tab"
 }
