@@ -12,5 +12,6 @@
   "block.wpmod.zircon_lamp": "Zircon Lamp",
   "block.wpmod.blueberry_crop": "Blueberry Crop",
 
-  "itemGroup.tutorialtab": "Zircon Tutorial Tab"
+  "itemGroup.tutorialtab": "Zircon Tutorial Tab",
+  "entity.minecraft.villager.jumpy_master": "Jumpy Master"
 }
