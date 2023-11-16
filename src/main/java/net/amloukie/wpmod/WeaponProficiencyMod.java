@@ -3,7 +3,10 @@ package net.amloukie.wpmod;
 import com.mojang.logging.LogUtils;
 import net.amloukie.wpmod.block.ModBlocks;
 import net.amloukie.wpmod.item.ModItems;
+import net.amloukie.wpmod.painting.ModPaintings;
 import net.amloukie.wpmod.villager.ModVillagers;
+import net.amloukie.wpmod.world.feature.ModConfiguredFeatures;
+import net.amloukie.wpmod.world.feature.ModPlacedFeatures;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -32,6 +35,10 @@ public class WeaponProficiencyMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModVillagers.register(modEventBus);
+        ModPaintings.register(modEventBus);
+
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

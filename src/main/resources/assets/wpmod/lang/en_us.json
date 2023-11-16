@@ -13,5 +13,8 @@
   "block.wpmod.blueberry_crop": "Blueberry Crop",
 
   "itemGroup.tutorialtab": "Zircon Tutorial Tab",
-  "entity.minecraft.villager.jumpy_master": "Jumpy Master"
+  "entity.minecraft.villager.jumpy_master": "Jumpy Master",
+
+  "key.category.wpmod.tutorial": "Tutorial Mod Category",
+  "key.wpmod.drink_water": "Drink Water"
 }
