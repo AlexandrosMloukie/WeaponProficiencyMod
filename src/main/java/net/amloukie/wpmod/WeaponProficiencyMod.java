@@ -3,6 +3,7 @@ package net.amloukie.wpmod;
 import com.mojang.logging.LogUtils;
 import net.amloukie.wpmod.block.ModBlocks;
 import net.amloukie.wpmod.item.ModItems;
+import net.amloukie.wpmod.networking.ModMessages;
 import net.amloukie.wpmod.painting.ModPaintings;
 import net.amloukie.wpmod.villager.ModVillagers;
 import net.amloukie.wpmod.world.feature.ModConfiguredFeatures;
@@ -48,6 +49,7 @@ public class WeaponProficiencyMod
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         event.enqueueWork(() -> {
+            ModMessages.register();
             ModVillagers.registerPOIs();
         });
     }

@@ -1,6 +1,9 @@
 package net.amloukie.wpmod.event;
 
 import net.amloukie.wpmod.WeaponProficiencyMod;
+import net.amloukie.wpmod.networking.ModMessages;
+import net.amloukie.wpmod.networking.packet.DrinkWaterC2SPacket;
+import net.amloukie.wpmod.networking.packet.ExampleC2SPacket;
 import net.amloukie.wpmod.util.KeyBinding;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
@@ -19,7 +22,7 @@ public class ClientEvents {
         {
             if(KeyBinding.DRINKING_KEY.consumeClick())
             {
-                Minecraft.getInstance().player.sendSystemMessage(Component.literal("Pressed a key!"));
+                ModMessages.sendToServer(new DrinkWaterC2SPacket());
             }
         }
     }

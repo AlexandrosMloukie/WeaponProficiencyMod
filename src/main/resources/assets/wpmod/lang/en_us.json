@@ -16,5 +16,8 @@
   "entity.minecraft.villager.jumpy_master": "Jumpy Master",
 
   "key.category.wpmod.tutorial": "Tutorial Mod Category",
-  "key.wpmod.drink_water": "Drink Water"
+  "key.wpmod.drink_water": "Drink Water",
+
+  "message.wpmod.drink_water": "Drinking water",
+  "message.wpmod.no_water": "No water nearby!"
 }
