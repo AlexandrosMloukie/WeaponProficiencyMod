@@ -28,7 +28,7 @@ public class BowHudOverlay {
         RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
         RenderSystem.setShaderTexture(0, BOWHUD_0);
 
-        if (EnhancedBow.getUsing()){
+        /*if (EnhancedBow.getUsing()){
             GuiComponent.blit(poseStack, x / 2, y / 2, 0, 0, 32, 15, 32, 15);
         }
 
@@ -41,5 +41,6 @@ public class BowHudOverlay {
                 GuiComponent.blit(poseStack, x / 2, y / 2, 0, 0, 32, 15, 32, 15);
             }
         }
+         */
     });
 }

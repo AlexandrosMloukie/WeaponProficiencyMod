@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/crop",
-  "render_type": "cutout",
-  "textures": {
-    "crop": "wpmod:block/blueberry_stage5"
-  }
-}

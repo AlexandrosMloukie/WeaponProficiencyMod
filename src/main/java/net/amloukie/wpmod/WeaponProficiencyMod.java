@@ -1,18 +1,9 @@
 package net.amloukie.wpmod;
 
 import com.mojang.logging.LogUtils;
-import net.amloukie.wpmod.block.ModBlocks;
 import net.amloukie.wpmod.item.ModItemProperties;
 import net.amloukie.wpmod.item.ModItems;
-import net.amloukie.wpmod.networking.ModMessages;
-import net.amloukie.wpmod.painting.ModPaintings;
-import net.amloukie.wpmod.villager.ModVillagers;
 import net.amloukie.wpmod.world.entity.ModEntityType;
-import net.amloukie.wpmod.world.feature.ModConfiguredFeatures;
-import net.amloukie.wpmod.world.feature.ModPlacedFeatures;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,7 +12,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -36,13 +26,7 @@ public class WeaponProficiencyMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
         ModEntityType.register(modEventBus);
-        ModVillagers.register(modEventBus);
-        ModPaintings.register(modEventBus);
-
-        ModConfiguredFeatures.register(modEventBus);
-        ModPlacedFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -51,10 +35,7 @@ public class WeaponProficiencyMod
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        event.enqueueWork(() -> {
-            ModMessages.register();
-            ModVillagers.registerPOIs();
-        });
+
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent

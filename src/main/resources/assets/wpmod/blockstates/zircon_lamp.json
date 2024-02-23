@@ -1,6 +1,0 @@
-{
-  "variants": {
-    "lit=true": { "model": "wpmod:block/zircon_lamp_on" },
-    "lit=false": { "model": "wpmod:block/zircon_lamp_off" }
-  }
-}

@@ -1,9 +1,7 @@
 package net.amloukie.wpmod.item;
 
 import net.amloukie.wpmod.WeaponProficiencyMod;
-import net.amloukie.wpmod.block.ModBlocks;
 import net.amloukie.wpmod.item.custom.*;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,6 +12,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, WeaponProficiencyMod.MOD_ID);
 
+    /*
     public static final RegistryObject<Item> ZIRCON = ITEMS.register("zircon",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
     public static final RegistryObject<Item> RAW_ZIRCON = ITEMS.register("raw_zircon",
@@ -36,6 +35,7 @@ public class ModItems {
                             .nutrition(2)
                             .saturationMod(2f)
                             .build())));
+    */
 
     public static final RegistryObject<Item> RUBY_ARROW = ITEMS.register("ruby_arrow",
             () -> new RubyArrowItem(new Item.Properties()
