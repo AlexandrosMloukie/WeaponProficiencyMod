@@ -12,31 +12,6 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, WeaponProficiencyMod.MOD_ID);
 
-    /*
-    public static final RegistryObject<Item> ZIRCON = ITEMS.register("zircon",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
-    public static final RegistryObject<Item> RAW_ZIRCON = ITEMS.register("raw_zircon",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
-
-    public static final RegistryObject<Item> EIGHT_BALL = ITEMS.register("eight_ball",
-            () -> new EightBallItem(new Item.Properties()
-                    .tab(ModCreativeModeTab.TUTORIAL_TAB)
-                    .stacksTo(1)));
-
-    public static final RegistryObject<Item> BLUEBERRY_SEEDS = ITEMS.register("blueberry_seeds",
-            () -> new ItemNameBlockItem(ModBlocks.BLUEBERRY_CROP.get(),
-                    new Item.Properties()
-                    .tab(ModCreativeModeTab.TUTORIAL_TAB)));
-
-    public static final RegistryObject<Item> BLUEBERRY = ITEMS.register("blueberry",
-            () -> new Item(new Item.Properties()
-                    .tab(ModCreativeModeTab.TUTORIAL_TAB)
-                    .food(new FoodProperties.Builder()
-                            .nutrition(2)
-                            .saturationMod(2f)
-                            .build())));
-    */
-
     public static final RegistryObject<Item> RUBY_ARROW = ITEMS.register("ruby_arrow",
             () -> new RubyArrowItem(new Item.Properties()
                     .tab(ModCreativeModeTab.TUTORIAL_TAB), 1.5f));
@@ -51,6 +26,9 @@ public class ModItems {
                     .tab(ModCreativeModeTab.TUTORIAL_TAB)));
     public static final RegistryObject<Item> FENCING_SWORD = ITEMS.register("fencing_sword",
             () -> new FencingSword(Tiers.IRON, 3, -2.4F, new Item.Properties()
+                    .tab(ModCreativeModeTab.TUTORIAL_TAB)));
+    public static final RegistryObject<Item> POISON_ARROW = ITEMS.register("poison_arrow",
+            () -> new PoisonArrowItem(new Item.Properties()
                     .tab(ModCreativeModeTab.TUTORIAL_TAB)));
 
     public static void register(IEventBus eventBus)

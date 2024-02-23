@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "wpmod:ruby_arrow",
-    "wpmod:harpoon_arrow"
+    "wpmod:harpoon_arrow",
+    "wpmod:poison_arrow"
   ]
 }

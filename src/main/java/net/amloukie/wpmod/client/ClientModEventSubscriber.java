@@ -2,6 +2,7 @@ package net.amloukie.wpmod.client;
 
 import net.amloukie.wpmod.WeaponProficiencyMod;
 import net.amloukie.wpmod.client.renderer.entity.HarpoonArrowRenderer;
+import net.amloukie.wpmod.client.renderer.entity.PoisonArrowRenderer;
 import net.amloukie.wpmod.client.renderer.entity.RubyArrowRenderer;
 import net.amloukie.wpmod.world.entity.ModEntityType;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -18,5 +19,6 @@ public class ClientModEventSubscriber {
     {
         event.registerEntityRenderer(ModEntityType.RUBY_ARROW.get(), RubyArrowRenderer::new);
         event.registerEntityRenderer(ModEntityType.HARPOON_ARROW.get(), HarpoonArrowRenderer::new);
+        event.registerEntityRenderer(ModEntityType.POISON_ARROW.get(), PoisonArrowRenderer::new);
     }
 }

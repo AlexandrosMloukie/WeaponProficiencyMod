@@ -16,10 +16,4 @@ public class HarpoonArrowItem extends ArrowItem {
         HarpoonArrow arrow = new HarpoonArrow(shooter, level, ModItems.HARPOON_ARROW.get());
         return arrow;
     }
-
-    @Override
-    public boolean isInfinite(ItemStack stack, ItemStack bow, net.minecraft.world.entity.player.Player player) {
-        int enchant = net.minecraft.world.item.enchantment.EnchantmentHelper.getItemEnchantmentLevel(net.minecraft.world.item.enchantment.Enchantments.INFINITY_ARROWS, bow);
-        return enchant <= 0 ? false : this.getClass() == HarpoonArrowItem.class;
-    }
 }
