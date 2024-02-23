@@ -5,6 +5,11 @@
   "item.wpmod.blueberry": "Blueberry",
   "item.wpmod.blueberry_seeds": "Blueberry Seeds",
 
+  "item.wpmod.ruby_arrow": "Fire Arrow",
+  "item.wpmod.harpoon_arrow": "Harpoon Arrow",
+  "item.wpmod.enhanced_bow": "Enhanced Bow",
+  "item.wpmod.guillotine_axe": "Guillotine Axe",
+
   "block.wpmod.zircon_block": "Block of Zircon",
   "block.wpmod.zircon_ore": "Zircon Ore",
   "block.wpmod.deepslate_zircon_ore": "Deepslate Zircon Ore",

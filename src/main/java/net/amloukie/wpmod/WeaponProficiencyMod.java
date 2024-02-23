@@ -2,10 +2,12 @@ package net.amloukie.wpmod;
 
 import com.mojang.logging.LogUtils;
 import net.amloukie.wpmod.block.ModBlocks;
+import net.amloukie.wpmod.item.ModItemProperties;
 import net.amloukie.wpmod.item.ModItems;
 import net.amloukie.wpmod.networking.ModMessages;
 import net.amloukie.wpmod.painting.ModPaintings;
 import net.amloukie.wpmod.villager.ModVillagers;
+import net.amloukie.wpmod.world.entity.ModEntityType;
 import net.amloukie.wpmod.world.feature.ModConfiguredFeatures;
 import net.amloukie.wpmod.world.feature.ModPlacedFeatures;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -35,6 +37,7 @@ public class WeaponProficiencyMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEntityType.register(modEventBus);
         ModVillagers.register(modEventBus);
         ModPaintings.register(modEventBus);
 
@@ -61,7 +64,9 @@ public class WeaponProficiencyMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            event.enqueueWork(() -> {
+                ModItemProperties.addCustomItemProperties();
+            });
         }
     }
 }

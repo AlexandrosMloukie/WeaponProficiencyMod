@@ -1,0 +1,6 @@
+{
+    "parent": "wpmod:item/enhanced_bow",
+    "textures": {
+        "layer0": "wpmod:item/enhanced_bow_pulling_1"
+    }
+}
